@@ -1,0 +1,130 @@
+[
+  {
+    "id": "001",
+    "nombre": "Ana Laura Nodarse Rodríguez ",
+    "fotoUrl": "/images/miembros/AnaLaura.webp",
+    "descripcion": "Estudiante de 3er año de Biología. Vicepresidente de la FEU en la UCLV. Certificada por SSI como buzo SNORKEL DIVER y OPEN WATER DIVER. Todos los trabajos investigativos en los que ha participado o colaborado son sobre ecología de especies marinas o conservación en general.",
+    "funcion": "Labores en todos los espacios pero el trabajo principal es acuático (buceo, asesoramiento)",
+    "viajes": 3
+  },
+  {
+    "id": "002",
+    "nombre": "Alejandro Martín Hernández",
+    "fotoUrl": "/images/miembros/AlejandroMartin.webp",
+    "descripcion": "Profesor del Centro de Estudios Jardín Botánico de Villa Clara  Facultad de Ciencias Agropecuarias Universidad Central ¨Marta Abreu¨de Las Villas .   Entusiasta, Aventurero, Conservacionista Agrónomo, Docente botánico . Líneas de investigación científica: Conservación de la fitodiversidad ,  Taxonomía y filogenia vegetal , Horticultura",
+    "funcion": "Co-dirige y co-organiza las actividades extracurriculares en Reserva Ecológica Canasí - Puerto Escondido",
+    "viajes": 3
+  },
+  {
+    "id": "003",
+    "nombre": "Cynthia Rodríguez Alfaro",
+    "fotoUrl": "/images/miembros/CynthiaAlfaro.webp",
+    "descripcion": "Investigadora en el Centro Meteorológico Provincial de Villa Clara. Ministerio de Ciencia, Tecnología y Medio Ambiente. Miembro de la Sociedad Cubana de Botánica.Bióloga Conservacionista. * Conservación de la Flora Endémica Amenazada de Cuba.Ecología,Taxonomía y Sistemática Vegetal,Bioestadística  ",
+    "funcion": "Como investigadora, me dedico a la publicación de artículos científicos que recopilan información sobre la flora característica de la Reserva Ecológica Canasí - Puerto Escondido, así como el estado de conservación de las diferentes formaciones vegetales que la integran. Mi trabajo busca generar conocimiento y conciencia sobre la importancia de preservar nuestra fitodiversidad local, especialmente en áreas sobre las que se ejerce una gran presión antrópica.",
+    "viajes": 1
+  },
+  {
+    "id": "004",
+    "fotoUrl": "/images/miembros/YennyPerez.webp",
+    "nombre": "Yenny Laura Carvajal Pérez",
+    "descripcion": "Lic. Biología, 3er año. Participé en dos viajes. En mi primer viaje, hice esnorquelin, recogida de basura a la orilla del río y conteo de basura, monitoreo de la planta Behaimia cubensis, observación de aves, y asistí a varias conferencias. En mi segundo viaje, participé en buceo con tanque de oxígeno, recogida y conteo de basura marina, monitoreo de la planta Behaimia cubensis, y expuse un PowerPoint sobre los datos del primer viaje.",
+    "funcion": "En mi primer viaje hice esnorquelin, participé en la recogida de basura a la orilla del río y en el conteo de esta, participé en el monitoreo de la planta Behaimia cubensis, participé en la caminata para observar aves, asistí a conferencias. En mi segundo viaje, participé en el buceo con tanque de oxígeno, participé en la recogida y conteo de basura marina, participé en el monitoreo de la planta Behaimia cubensis, y expuse un PowerPoint sobre la recogida de basura y el conteo de la planta Behaimia cubensis.",
+    "viajes": 2
+  },
+  {
+    "id": "005",
+    "nombre": "Daymí Isabel Carrazana-García",
+    "fotoUrl": "/images/miembros/DayamiLM.webp",
+    "descripcion": "Departamento Farmacia, Facultad Química-Farmacia, UCLV. Coordina formación ambiental de estudiantes universitarios y monitoreos a basuras marinas.",
+    "funcion": "Coordina formación ambiental de estudiantes universitarios y monitoreos a basuras marinas.",
+    "viajes": 0
+  },
+  {
+    "id": "006",
+    "nombre": "Stephanie Fernández Brito",
+    "fotoUrl": "/images/miembros/StephanieFernandez.webp",
+    "descripcion": "Facultad de Ciencias Agropecuarias, Biología 2do año. Aprendiz y dedicada a la carrera, el cuidado y conservación de especies y hábitats naturales. He asistido una vez a Puerto Escondido para la realización de actividades.",
+    "funcion": "Participó en actividades como el monitoreo de la especie Behaimia cubensis, recogida de basuras en la playa y clasificación de los desechos recogidos en madera, plástico, vidrio, entre otros.",
+    "viajes": 1
+  },
+  {
+    "id": "007",
+    "fotoUrl": "/images/miembros/MelanyRuiz.webp",
+    "nombre": "Melany Ruiz Hernández",
+    "descripcion": "Estudiante de Periodismo de la Facultad de Humanidades en la Universidad Central Marta Abreu de Las Villas. Entusiasta y siempre deseosa de vivir nuevas experiencias, me gusta el contacto y cuidado de la naturaleza. Soy parte del equipo de prensa del proyecto, y mis objetivos es realizar trabajos que den a conocer la labor que realizan allá.",
+    "funcion": "Parte del equipo de prensa del proyecto, con el objetivo de realizar trabajos que den a conocer la labor que realizan en el proyecto.",
+    "viajes": 0
+  },
+  {
+    "id": "008",
+    "nombre": "José Lorenzo Mirabal Echevarría",
+    "fotoUrl": "/images/miembros/unknow.jpg",
+    "descripcion": "Estudiante de segundo año de la carrera de Biología. He realizado un viaje al área protegida.",
+    "funcion": "Monitoreo de Behaimia cubensis.",
+    "viajes": 1
+  },
+  {
+    "id": "009",
+    "fotoUrl": "/images/miembros/Enimey.webp",
+    "nombre": "Enimey Socorro Lompuy",
+    "descripcion": "Biología, 3er año. Micóloga en proceso, aventurera, amante de la naturaleza, entusiasta en temas de ecología y conservación. Ha realizado tres expediciones a Puerto Escondido. Tareas realizadas: Monitoreo a Behaimia cubensis, recogida de basura, conteo y clasificación de la misma. Además, recorridos en el área para la toma de fotografías y posterior clasificación de la Funga del lugar.",
+    "funcion": "Encargada del estudio de la Funga de la Reserva Ecológica Canasí-Puerto Escondido, así como de la Flora y Fauna del lugar. Por su experiencia en los viajes, también co-dirige y co-organiza los mismos.",
+    "viajes": 3
+  },
+  {
+    "id": "010",
+    "fotoUrl": "/images/miembros/RobertoFernandez.webp",
+    "nombre": "Roberto Fernández Blanco",
+    "descripcion": "Coordinador del Proyecto Universitario de Intervención en Ecosistemas Costeros. Centro de Estudios Jardín Botánico, Facultad de Ciencias Agropecuarias. Profesor y educador ambiental, 52 años.",
+    "funcion": "Coordinador del Proyecto Universitario de Intervención en Ecosistemas Costeros.",
+    "viajes": 1
+  },
+  {
+    "id": "011",
+    "nombre": "Isabel de Vales Perez",
+    "fotoUrl": "/images/miembros/IsabelPerez.webp",
+    "descripcion": "Estudiante de la Licenciatura en Biología. Interés en el estudio y conservación de los ecosistemas marinos.",
+    "funcion": "Realizar un estudio sobre los microplásticos existentes en Puerto Escondido y divulgar los efectos de la contaminación con los locales de Puerto Escondido.",
+    "viajes": 0
+  },
+  {
+    "id": "012",
+    "nombre": "Alejandro Herrera Suárez",
+    "fotoUrl": "/images/miembros/AlejandroHerrera.webp",
+    "descripcion": "Cursante de la licenciatura en Química. Interés en la química ambiental y orgánica.",
+    "funcion": "Estudio de microplásticos y divulgación de los efectos negativos de la contaminación con los locales de Puerto Escondido.",
+    "viajes": 0
+  },
+  {
+    "id": "013",
+    "nombre": "Orlando Marín Mejias",
+    "fotoUrl": "/images/miembros/OrlandoMarin.webp",
+    "descripcion": "Recién graduado en Lic. Biología. Entusiasta de fotografía de naturaleza, ecólogo y conservacionista. Adiestrado en aracnología. Participé en 1 viaje.",
+    "funcion": "Ayudante de los especialistas para el muestreo de la vegetación estudiada y participé en la recogida de basura de las playas de la zona.",
+    "viajes": 1
+  },
+  {
+    "id": "014",
+    "nombre": "Lilian B Mesa Estepa",
+    "fotoUrl": "/images/miembros/LilianMB.webp",
+    "descripcion": "Biología, Tercer Año. Bióloga marina en proceso, manatí lover, por el momento aprendiendo sobre corales. Intereses personales: conservación, vida marina y proyectos medioambientales.",
+    "funcion": "Tareas realizadas: Monitoreo a Behaimia cubense, recogida, conteo y clasificación de basura. Objetivos: aprender todo lo que pueda sobre cada rama de la biología para complementar mi formación integral y conocimientos.",
+    "viajes": 1
+  },
+  {
+    "id": "015",
+    "nombre": "Abdel Valdes Rodriguez",
+    "fotoUrl": "/images/miembros/Abdel.webp",
+    "descripcion": "Biología, 2do año. Monitor de basura marina. He ido una vez a Puerto Escondido, en ese viaje estuvimos realizando, principalmente, el monitoreo de la Behaimia cubensis, así como la búsqueda, conteo y registro de más ejemplares de la misma especie. En cuanto a nuestros trabajos en la costa, realizamos una limpieza en la playa, tanto en la orilla como en el arrecife. Lo recogido fue contado y clasificado posteriormente con el objetivo de desarrollar un futuro trabajo sobre la contaminación marina.",
+    "funcion": "Monitor de basura marina. Participó en el monitoreo de la Behaimia cubensis, búsqueda, conteo y registro de ejemplares. Realizó limpieza en la playa y el arrecife, contando y clasificando los residuos para estudios sobre contaminación marina.",
+    "viajes": 1
+  },
+  {
+    "id": "016",
+    "nombre": "Paulo Enrique Morell Fernández",
+    "fotoUrl": "/images/miembros/PauloEnrique.webp",
+    "descripcion": "Biología, Tercer Año. Científico de cuna, leyendo sobre dinosaurios desde pequeño. Me interesa la ecología, la etología y la paleontología. Ahora mismo contando aves. Nunca dejo de aprender.",
+    "funcion": "Participó en la primera expedición con tareas de monitoreo a Behaimia cubense.",
+    "viajes": 1
+  }
+]
