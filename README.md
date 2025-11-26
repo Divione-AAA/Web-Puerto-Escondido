@@ -47,6 +47,3 @@ Permite centralizar información de los participantes, facilitar la navegación 
 - Si al ejecutar `npm install` aparece conflicto con paquetes que requieren React 16/17/18 (por ejemplo `vaul`), configurar React a 18.2.0 o actualizar/quitar el paquete conflictivo.  
 - Componentes que usan hooks deben ser Client Components (`"use client"`).  
 - La app actualmente está forzada en modo oscuro; para cambiar comportamiento del tema revisa hooks y layout.
-
-## 📍 Ubicación local
-c:\Users\vpn\Documents\GitHub\Teoria de Grafos\Web-Puerto-Escondido
