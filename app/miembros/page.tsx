@@ -7,7 +7,6 @@ export default function MiembrosPage() {
   return (
     <div className="min-h-screen">
       <Navigation />
-
       {/* Header */}
       <section className="pt-32 pb-16 bg-gradient-to-b from-primary/5 to-background">
         <div className="container mx-auto px-4">
@@ -23,7 +22,6 @@ export default function MiembrosPage() {
           </div>
         </div>
       </section>
-
       {/* Members Grid */}
       <section className="py-16">
         <div className="container mx-auto px-4">
