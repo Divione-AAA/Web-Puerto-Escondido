@@ -1,19 +1,9 @@
 import { Navigation } from "@/components/navigation"
 import { MemberCard } from "@/components/member-card"
 import { Waves } from "lucide-react"
-import { getMiembros } from "@/lib/api/strapi"
+import { miembrosData } from "@/lib/data/miembros"
 
-export default async function MiembrosPage() {
-  let miembros: any[] = []
-  let error = false
-
-  try {
-    miembros = await getMiembros()
-  } catch (err) {
-    console.error("Error fetching miembros:", err)
-    error = true
-  }
-
+export default function MiembrosPage() {
   return (
     <div className="min-h-screen">
       <Navigation />
@@ -37,25 +27,11 @@ export default async function MiembrosPage() {
       {/* Members Grid */}
       <section className="py-16">
         <div className="container mx-auto px-4">
-          {error ? (
-            <div className="flex items-center justify-center py-24">
-              <div className="text-center space-y-4">
-                <p className="text-muted-foreground">Error al cargar los miembros. Por favor, intenta más tarde.</p>
-              </div>
-            </div>
-          ) : miembros.length === 0 ? (
-            <div className="flex items-center justify-center py-24">
-              <div className="text-center space-y-4">
-                <p className="text-muted-foreground">No hay miembros disponibles</p>
-              </div>
-            </div>
-          ) : (
-            <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 max-w-7xl mx-auto">
-              {miembros.map((miembro) => (
-                <MemberCard key={miembro.id} member={miembro} />
-              ))}
-            </div>
-          )}
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 max-w-7xl mx-auto">
+            {miembrosData.map((miembro) => (
+              <MemberCard key={miembro.id} member={miembro} />
+            ))}
+          </div>
         </div>
       </section>
     </div>

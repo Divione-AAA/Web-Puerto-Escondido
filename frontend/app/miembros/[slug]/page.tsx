@@ -1,48 +1,40 @@
-"use client"
-
 import { Navigation } from "@/components/navigation"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { ArrowLeft, MapPin, Briefcase } from "lucide-react"
 import Link from "next/link"
 import Image from "next/image"
-import { getMiembroBySlug } from "@/lib/api/strapi"
+import { notFound } from "next/navigation"
+import { miembrosData } from "@/lib/data/miembros"
 
-export default async function MemberDetailPage({ params }: { params: { slug: string } }) {
-  let member: any = null
-  let error = false
+// Generate static params for all members
+export function generateStaticParams() {
+  return miembrosData.map((member) => ({
+    slug: member.nombre
+      .trim()
+      .toLowerCase()
+      .normalize("NFD")
+      .replace(/[\u0300-\u036f]/g, "")
+      .replace(/\s+/g, "-")
+      .replace(/[^\w-]+/g, ""),
+  }))
+}
 
-  try {
-    member = await getMiembroBySlug(params.slug)
-  } catch (err) {
-    console.error("Error fetching member:", err)
-    error = true
-  }
+export default function MemberDetailPage({ params }: { params: { slug: string } }) {
+  // Find member by slug
+  const member = miembrosData.find((m) => {
+    const memberSlug = m.nombre
+      .trim()
+      .toLowerCase()
+      .normalize("NFD")
+      .replace(/[\u0300-\u036f]/g, "")
+      .replace(/\s+/g, "-")
+      .replace(/[^\w-]+/g, "")
+    return memberSlug === params.slug
+  })
 
-  const getFotoUrl = () => {
-    if (member?.fotoURL?.data?.attributes?.url) {
-      const url = member.fotoURL.data.attributes.url
-      return url.startsWith("http") ? url : `${process.env.NEXT_PUBLIC_STRAPI_API_URL}${url}`
-    }
-    return "/placeholder.svg"
-  }
-
-  if (error || !member) {
-    return (
-      <div className="min-h-screen">
-        <Navigation />
-        <div className="pt-32 pb-16">
-          <div className="container mx-auto px-4">
-            <div className="max-w-2xl mx-auto text-center space-y-6">
-              <h1 className="text-4xl font-bold">Miembro no encontrado</h1>
-              <Link href="/miembros">
-                <Button>Volver al equipo</Button>
-              </Link>
-            </div>
-          </div>
-        </div>
-      </div>
-    )
+  if (!member) {
+    notFound()
   }
 
   return (
@@ -69,12 +61,12 @@ export default async function MemberDetailPage({ params }: { params: { slug: str
               {/* Left Column - Image */}
               <div className="space-y-6">
                 <div className="relative aspect-square rounded-2xl overflow-hidden bg-muted border-4 border-border">
-                  <Image src={getFotoUrl() || "/placeholder.svg"} alt={member.nombre} fill className="object-cover" />
+                  <Image src={member.fotoUrl || "/placeholder.svg"} alt={member.nombre} fill className="object-cover" />
                 </div>
 
                 {/* Stats */}
                 <div className="space-y-3">
-                  {member.viajes && member.viajes > 0 && (
+                  {member.viajes > 0 && (
                     <div className="flex items-center gap-3 p-4 bg-card rounded-lg border border-border">
                       <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
                         <MapPin className="h-5 w-5 text-primary" />
@@ -100,30 +92,28 @@ export default async function MemberDetailPage({ params }: { params: { slug: str
                 </div>
 
                 {/* Description */}
-                {member.description && (
-                  <div className="space-y-4">
-                    <h2 className="text-2xl font-bold flex items-center gap-2">
-                      <div className="w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center">
-                        <Briefcase className="h-4 w-4 text-primary" />
-                      </div>
-                      Sobre mí
-                    </h2>
-                    <p className="text-lg text-muted-foreground leading-relaxed">{member.description}</p>
-                  </div>
-                )}
+                <div className="space-y-4">
+                  <h2 className="text-2xl font-bold flex items-center gap-2">
+                    <div className="w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center">
+                      <Briefcase className="h-4 w-4 text-primary" />
+                    </div>
+                    Sobre mí
+                  </h2>
+                  <p className="text-lg text-muted-foreground leading-relaxed">{member.descripcion}</p>
+                </div>
 
                 {/* Function */}
-                {member.function && (
+                {member.funcion && (
                   <div className="space-y-4">
                     <h2 className="text-2xl font-bold">Función en el proyecto</h2>
                     <div className="p-6 bg-card rounded-xl border border-border">
-                      <p className="text-muted-foreground leading-relaxed">{member.function}</p>
+                      <p className="text-muted-foreground leading-relaxed">{member.funcion}</p>
                     </div>
                   </div>
                 )}
 
                 {/* Experience Highlights */}
-                {member.viajes && member.viajes > 0 && (
+                {member.viajes > 0 && (
                   <div className="space-y-4">
                     <h2 className="text-2xl font-bold">Experiencia de campo</h2>
                     <div className="grid gap-4">
